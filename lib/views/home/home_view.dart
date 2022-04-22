@@ -1,12 +1,10 @@
 // ignore_for_file: unnecessary_new
 
-import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kurtakip/controllers/exchange_controller.dart';
 import 'package:kurtakip/models/exchange.dart';
-import 'package:kurtakip/services/exchange.dart';
+import 'package:kurtakip/native/method_channel.dart';
 import 'package:kurtakip/widgets/cards/currency_card.dart';
 import 'package:kurtakip/widgets/forms/drop_down.dart';
 import 'package:kurtakip/widgets/forms/text_form_field.dart';
@@ -28,6 +26,7 @@ class _HomeViewState extends State<HomeView> {
   void initState() {
     super.initState();
     _exchangeController.getAllExchange();
+    NativeChannel.start();
   }
 
   @override

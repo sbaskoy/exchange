@@ -4,8 +4,8 @@ class ErrorModel {
 
   ErrorModel({this.code, this.message});
   ErrorModel.fromJson(json) {
-    this.code = json["code"];
-    this.message = json["message"];
+    code = json["code"];
+    message = json["message"];
   }
   fromJson(json) => ErrorModel.fromJson(json);
 

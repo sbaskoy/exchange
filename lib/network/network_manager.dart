@@ -1,7 +1,5 @@
 // ignore_for_file: unnecessary_this
 
-import 'dart:developer';
-
 import 'package:xml/xml.dart';
 
 import 'dart:async';
