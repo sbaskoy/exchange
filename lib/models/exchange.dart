@@ -1,6 +1,6 @@
 // ignore_for_file: unnecessary_this
 
-import 'dart:developer';
+
 
 import 'package:kurtakip/network/i_netwok.dart';
 import 'package:xml/xml.dart';
